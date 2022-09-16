@@ -1,9 +1,9 @@
-body{
-    background-color: 	#2D383A;
+body {
+    background-color: #2D383A;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav{
+nav {
     display: flex;
     background-color: #1B1B1B;
     box-shadow: #66FF66 0px 6px 12px -2px, #66FF66 0px 3px 7px -3px;
@@ -12,28 +12,28 @@ nav{
     z-index: 5;
 }
 
-.nav2{
+.nav2 {
     display: flex;
 }
 
-.nav2>a{
-   padding: 2vh 4vh;
-   font-size: 3vh;
-   text-decoration: none;
-   color: #66FF66;
-   border: 1px solid #1B1B1B;
-   transition: 500ms;
-   filter: blur(0.1vh);
+.nav2>a {
+    padding: 2vh 4vh;
+    font-size: 3vh;
+    text-decoration: none;
+    color: #66FF66;
+    border: 1px solid #1B1B1B;
+    transition: 500ms;
+    filter: blur(0.1vh);
 }
 
-.nav2>a:hover{
+.nav2>a:hover {
     color: #FAFA37;
     filter: blur(0.2vh);
     border: 1px solid #FAFA37;
     box-shadow: #66FF66 0px 6px 12px -2px, #FAFA37 0px 3px 7px -3px;
 }
 
-.nav2>a:active{
+.nav2>a:active {
     transition: none;
     color: black;
     filter: blur(0.2vh);
@@ -42,28 +42,28 @@ nav{
     box-shadow: #FAFA37 0px 6px 12px -2px, #FAFA37 0px 3px 7px -3px;
 }
 
-.nav1>img{
-height: 5vh;
-padding: 2vh;
-transition: 1s;
+.nav1>img {
+    height: 5vh;
+    padding: 2vh;
+    transition: 1s;
 }
 
-.nav1>img:hover{
+.nav1>img:hover {
     transform: scale(1.4);
     cursor: pointer;
 }
 
-#activated{
+#activated {
     transition: none;
     color: black;
     filter: blur(0.2vh);
     border: 1px solid #FAFA37;
     background-color: #FAFA37;
     box-shadow: #FAFA37 0px 6px 12px -2px, #FAFA37 0px 3px 7px -3px;
-    
+
 }
 
-#slogan{
+#slogan {
     text-align: center;
     font-style: italic;
     color: #66FF66;
@@ -71,60 +71,60 @@ transition: 1s;
     text-shadow: 2px 2px #000000;
 }
 
-.student-info{
+.student-info {
     display: grid;
     grid-template-columns: 35% 65%;
 }
 
-.student-info>div>h2{
-color: #FF00CC;
-text-align: center;
-margin-bottom: 20vh;
+.student-info>div>h2 {
+    color: #FF00CC;
+    text-align: center;
+    margin-bottom: 20vh;
 }
 
-.student-info>div>p{
-    color: #F1E788;
+.student-info>div>p {
+    color: #76D7EA;
     text-align: center;
     font-size: 6vh;
-    filter: blur(0.3vh);
-    }
-
-    .student-info>div>h3{
-        text-align: right;
-        color: white;
-    }
-
-    .student-info>div>h3>p{
-        color: white;
-        font-size: 2vh;
-        font-weight: normal;
-    }
-
-
-
-
-
-
-
-
-    @media screen and (max-width: 480px) {
-        .nav2{
-           display: grid;
-        }
-nav{
-    height: 9vh;
-    overflow: hidden;
-    transition: 1s height ease-in-out;
 }
 
-nav:hover{
-    height: auto;
+.student-info>div>h3 {
+    text-align: right;
+    color: white;
 }
 
-       .student-info{
+.student-info>div>h3>p {
+    color: white;
+    font-size: 2vh;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .nav2 {
+        display: grid;
+    }
+
+    nav {
+        height: 9vh;
+        overflow: hidden;
+        transition: 1s height ease-in-out;
+    }
+
+    nav:hover {
+        height: auto;
+    }
+
+    .student-info {
         grid-template-columns: auto;
-       }
-      }
+    }
+}
 
 
 
@@ -132,33 +132,141 @@ nav:hover{
 
 
 
-#why-container{
+#why-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2vh;
-   
+
 }
 
-#why-container>div{
+#why-container>div {
     box-shadow: #FAFA37 0px 7px 29px 0px;
-     border-radius: 10%;
-     text-align: center;
-     padding: 5px;
-     border: 1px solid #FAFA37;
-     cursor: pointer;
+    border-radius: 10%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #FAFA37;
+    cursor: pointer;
 }
 
-#why-container>div>h2{
-    color: #AAF0D1;
+#why-container>div>h2 {
+    color: #FDFF00;
 
 }
 
-#why-container>div>center>img{
+#why-container>div>center>img {
     transition: 1s ease-in-out;
 }
 
 
-#why-container>div>center>img:hover{
+#why-container>div>center>img:hover {
     transition: 1s ease-in-out;
     transform: scale(1.5);
+}
+
+#founder {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 10vh;
+    margin-top: 10vh;
+    cursor: pointer;
+}
+
+#founder>div img {
+    width: 100%;
+    transition: 2s;
+}
+
+#founder>div img:hover {
+    transform: scale(1.4);
+}
+
+#founder>div:nth-child(1) {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: #93CCEA 0px 7px 29px 0px;
+}
+
+#founder>div:nth-child(2)>h3 {
+    color: #FF00CC;
+}
+
+#founder>div:nth-child(2)>p {
+    color: #76D7EA;
+    text-align: center;
+    font-size: 3.5vh;
+    filter: blur(0.2vh);
+}
+
+#teacher-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin: auto;
+    gap: 2vh;
+    text-align: center;
+}
+
+#teacher-info>div {
+    cursor: pointer;
+}
+
+#teacher-info img {
+    width: 100%;
+    transition: 1s;
+}
+
+#teacher-info img:hover {
+    transform: scale(0.9);
+}
+
+#teacher-info>div>h2 {
+    color: #FF355E;
+}
+
+#teacher-info>div>p {
+    color: #FFF700;
+}
+
+
+.review{
+width:80%;
+margin: 20px auto;
+}
+
+.review>div{
+box-shadow: #6CDAE7 0px 3px 8px;
+padding: 2vh;
+border-radius: 1vh;
+margin: 40px;
+}
+
+.review>div>h1{
+    color: #FDFF00;
+    filter: blur(0.3vh);
+}
+
+.review>div>h2{
+    color: #FDFF00;
+}
+
+.review>div>p{
+    color: #93CCEA;
+}
+
+
+
+
+footer {
+    display: grid;
+    background-color: #1B1B1B;
+    box-shadow: #66FF66 0px 2px 4px 0px, #66FF66 0px 2px 16px 0px;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    z-index: 5;
+}
+
+footer>div>a{
+    text-decoration: none;
+    font-size: 3vh;
+    color: white;
 }
